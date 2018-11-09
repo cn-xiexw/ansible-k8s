@@ -1,0 +1,4 @@
+- hosts: master,node
+  remote_user: root
+  roles:
+       - ssl
