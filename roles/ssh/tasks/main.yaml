@@ -1,0 +1,12 @@
+- name: 复制主机密码配置信息文件
+  copy:
+      src: password.txt
+      dest: /tmp
+      mode: 755
+- name: 复制安装脚本文件
+  copy:
+      src: pass.sh
+      dest: /tmp
+      mode: 755
+- name: 配置主机ssh互信
+  shell: /bin/bash pass.sh
